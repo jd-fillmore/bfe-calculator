@@ -2,6 +2,6 @@
 
 Built with JavaScript, HTML5, CSS3
 
-Showcase: https://jdfill.me/bf-calculator
+Showcase: https://jdfillmore.netlify.app/bf-calculator
 
 Direct demo: https://jk1rj.csb.app/
