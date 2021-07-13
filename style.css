@@ -1,0 +1,157 @@
+/* General */
+
+html,
+body {
+  font-family: "Open Sans", sans-serif;
+  background: #d7d7d7;
+}
+
+.flex {
+  display: flex;
+}
+
+h2 {
+  margin-top: 0px;
+  font-weight: bold;
+}
+
+.btn {
+  background-color: #ffc821;
+  padding: 10px 15px;
+  color: #333333;
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  transition: 0.2s;
+}
+
+.btn:hover,
+.btn-primary:focus {
+  background: #990000 !important;
+  border-bottom: 0;
+}
+
+/* Header */
+
+header {
+  background: #990000;
+  padding: 10px 0px 10px 0px;
+}
+
+header img {
+  margin: 0 auto;
+  display: block;
+}
+
+/* Financing Terms (Months) */
+
+section#financing {
+  background: #fff;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 1px 13px rgba(0, 0, 0, 0.12);
+}
+
+.financing {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  margin-top: -20px;
+  margin-bottom: 30px;
+}
+
+.financing li {
+  margin: 0 5px 0 0;
+  width: 100px;
+  height: 40px;
+  position: relative;
+}
+
+.financing label,
+.financing input {
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.financing input[type="radio"] {
+  opacity: 0.011;
+  z-index: 100;
+}
+
+.financing input[type="radio"]:checked + label {
+  background: #ffcd11;
+}
+
+.financing label {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  z-index: 90;
+  transition: 0.2s;
+}
+
+.financing label:hover,
+.financing label:focus {
+  background: #ddd;
+  transform: translate3D(0, -3px, 0);
+  box-shadow: 0 5px 10px #d5d5d5;
+}
+
+/* Final Calculations */
+
+#down-payment-value,
+#total-value,
+#per-month-value {
+  margin-left: 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.card-row {
+  margin-top: 20px;
+}
+
+.cards {
+  background: #ffcd11;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  background: #000;
+}
+
+.header h3 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+}
+
+@media (max-width: 992px) {
+  .cards {
+    margin-bottom: 20px;
+  }
+}
+
+/* Terms */
+
+p#terms {
+  margin-top: 20px;
+}
+
+@media (max-width: 992px) {
+  p#terms {
+    margin-top: 0px;
+  }
+}

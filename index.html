@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Battlefield Financing Calculator</title>
+    <!--Bootstrap-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+      integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+      crossorigin="anonymous"
+    />
+    <!--Custom Styles-->
+    <link rel="stylesheet" href="/style.css" />
+    <!--Google Font-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header></header>
+    <div class="container">
+      <section id="financing">
+        <div class="row">
+          <div class="col-lg-12">
+            <!--Pricing-->
+            <h2><sup>$</sup><span id="product-price"></span></h2>
+            <!--Financing Months-->
+            <p>Please select your financing term (months):</p>
+            <ul class="financing">
+              <li>
+                <input
+                  type="radio"
+                  id="24-months"
+                  name="month"
+                  value="24"
+                  checked
+                />
+                <label
+                  for="24-months"
+                  class="labels"
+                  id="24-month-label"
+                  tabindex="0"
+                  >24</label
+                >
+              </li>
+              <li>
+                <input type="radio" id="36-months" name="month" value="36" />
+                <label
+                  for="36-months"
+                  class="labels"
+                  id="36-month-label"
+                  tabindex="0"
+                  >36</label
+                >
+              </li>
+              <li>
+                <input type="radio" id="48-months" name="month" value="48" />
+                <label
+                  for="48-months"
+                  class="labels"
+                  id="48-month-label"
+                  tabindex="0"
+                  >48</label
+                >
+              </li>
+              <li>
+                <input
+                  type="radio"
+                  id="60-months"
+                  name="month"
+                  value="60"
+                  checked
+                />
+                <label
+                  for="60-months"
+                  class="labels"
+                  id="60-month-label"
+                  tabindex="0"
+                  >60</label
+                >
+              </li>
+            </ul>
+            <!--Down Payment-->
+            <p>
+              Please select your down payment percentage:
+            </p>
+            <ul class="financing">
+              <li>
+                <input
+                  type="radio"
+                  id="zero-percent"
+                  name="percent"
+                  value="0"
+                  checked
+                />
+                <label
+                  for="zero-percent"
+                  id="zero-percent-label"
+                  class="labels"
+                  tabindex="0"
+                  >0%</label
+                >
+              </li>
+              <li>
+                <input
+                  type="radio"
+                  id="ten-percent"
+                  name="percent"
+                  value="0.1"
+                  checked
+                />
+                <label
+                  for="ten-percent"
+                  id="ten-percent-label"
+                  class="labels"
+                  tabindex="0"
+                  >10%</label
+                >
+              </li>
+              <li>
+                <input
+                  type="radio"
+                  id="twenty-percent"
+                  name="percent"
+                  value="0.2"
+                />
+                <label
+                  for="twenty-percent"
+                  id="twenty-percent-label"
+                  class="labels"
+                  tabindex="0"
+                  >20%</label
+                >
+              </li>
+              <li>
+                <input
+                  type="radio"
+                  id="thirty-percent"
+                  name="percent"
+                  value="0.3"
+                />
+                <label
+                  for="thirty-percent"
+                  id="thirty-percent-label"
+                  class="labels"
+                  tabindex="0"
+                  >30%</label
+                >
+              </li>
+              <li>
+                <input
+                  type="radio"
+                  id="fourty-percent"
+                  name="percent"
+                  value="0.4"
+                />
+                <label
+                  for="fourty-percent"
+                  id="fourty-percent-label"
+                  class="labels"
+                  tabindex="0"
+                  >40%</label
+                >
+              </li>
+              <li>
+                <input
+                  type="radio"
+                  id="fifty-percent"
+                  name="percent"
+                  value="0.5"
+                />
+                <label
+                  for="fifty-percent"
+                  id="fifty-percent-label"
+                  class="labels"
+                  tabindex="0"
+                  >50%</label
+                >
+              </li>
+            </ul>
+            <!--Calculate Button-->
+            <button id="calculate" class="btn btn-primary">Calculate</button>
+            <!--Final Calculations-->
+            <div class="row card-row">
+              <div class="col-md-4">
+                <div class="header">
+                  <h3>Down Payment</h3>
+                </div>
+                <div class="cards">
+                  <h3 id="down-payment-value"><sup>$</sup>0</h3>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="header">
+                  <h3>Total</h3>
+                </div>
+                <div class="cards">
+                  <h3 id="total-value"><sup>$</sup>0</h3>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="header">
+                  <h3>Per Month</h3>
+                </div>
+                <div class="cards">
+                  <div class="per-month">
+                    <h3 id="per-month-value"><sup>$</sup>0</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <p id="terms">
+                  Applicable Sales Taxes are not included. Terms and conditions
+                  may apply.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!--Custom JS-->
+    <script src="index.js"></script>
+  </body>
+</html>
