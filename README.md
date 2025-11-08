@@ -1,3 +1,5 @@
+<img src="https://i.imgur.com/qMAO9G4.jpg" alt="battlefield equipment rentals logo"/>
+
 # BFE Loan Calculator
 Helps potential buyers estimate loan amounts for renting or purchasing heavy machinery.
 
