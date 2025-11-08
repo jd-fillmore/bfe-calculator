@@ -1,18 +1,15 @@
-<img src="https://i.imgur.com/qMAO9G4.jpg" alt="battlefield equipment rentals logo"/>
+# BFE Loan Calculator
+Helps potential buyers estimate loan amounts for renting or purchasing heavy machinery.
 
-<h1>BFE Loan Calculator</h1>
+## Tech Stack
+JavaScript, HTML5, CSS3
 
-<h3>Business Value</h3>
+## Features
+- Calculates loan amounts based on user input
+- Intuitive, user-friendly interface
+- Responsive design for desktop and mobile
 
-Informs potential buyers about the loan amount for renting or purchasing heavy machinery.
-
-<h3>Tech Used</h3>
-
-Built with JavaScript, HTML5, CSS3.
-
-<h3>Demo</h3>
-
+## Demo
 https://jk1rj.csb.app/
 
-<img src="https://i.imgur.com/ywkDOaD.png" alt="bfe loan calculator preview"/>
-
+![BFE Loan Calculator Preview](https://i.imgur.com/ywkDOaD.png)
